@@ -1,0 +1,32 @@
+<idea-plugin>
+  <id>com.jandroid.plugin.pngreduce</id>
+  <name>png reduce</name>
+  <version>1.0</version>
+  <vendor email="lunahost@163.com" url="https://github.com/jessandroid">jandroid</vendor>
+
+  <description>压缩图片大小，方便处理大图困扰，可以选定资源稳健的路径和输出路径，然后对资源进行压缩处理</description>
+
+  <change-notes>1.初始化项目 2.加入应用ICON和初始化信息包括但不仅限于开发者信息和联系方式</change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <action id="com.jandroid.pngreduce.action.MainAction" class="com.jandroid.pngreduce.action.MainAction" text="PngReduce"
+            description="reduce png size " icon="/img/icon_image_slimming.png">
+      <add-to-group group-id="ToolbarRunGroup" anchor="last"/><!--加入到ToolbarRunGroup内置组-->
+    </action>！
+  </actions>
+
+</idea-plugin>
